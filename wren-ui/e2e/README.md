@@ -53,8 +53,10 @@
 3. Build UI before starting e2e server
 
    ```bash
-   yarn build
+   export SQLITE_FILE=testdb.sqlite3 && yarn build
    ```
+
+   > Use SQLITE_FILE as testdb.sqlite3 for E2E testing.
 
    > Ensure port 3000 is available for E2E testing. The AI service needs WREN_UI_ENDPOINT to connect to this port for accurate and reliable test results.
 
